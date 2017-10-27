@@ -10,5 +10,28 @@
   Text Domain: gulp-wordpress
 */
 body {
-  color: #fff;
-  background-color: blue; }
+  color: #fff; }
+
+.container {
+  max-width: 1600px; }
+
+.header-content-wrapper {
+  background-image: url("./img/tlo-header.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); }
+
+nav {
+  padding-top: 60px;
+  padding-left: 60px; }
+  nav .header-content-logo {
+    float: left; }
+  nav ul {
+    list-style-type: none;
+    line-height: 0px;
+    text-align: right; }
+    nav ul li {
+      display: inline;
+      margin-right: 25px;
+      text-transform: uppercase; }
