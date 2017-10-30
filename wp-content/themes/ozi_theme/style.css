@@ -10,7 +10,22 @@
   Text Domain: gulp-wordpress
 */
 body {
-  color: #fff; }
+  color: #fff;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
 
 .container {
   max-width: 1600px; }
@@ -20,18 +35,42 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6); }
+          box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.6);
+  padding: 0 150px;
+  height: 100vh; }
+  .header-content-wrapper img {
+    vertical-align: middle; }
 
 nav {
-  padding-top: 60px;
-  padding-left: 60px; }
+  height: 100px;
+  line-height: 100px; }
   nav .header-content-logo {
     float: left; }
   nav ul {
     list-style-type: none;
-    line-height: 0px;
-    text-align: right; }
+    float: right;
+    margin: 0; }
     nav ul li {
       display: inline;
       margin-right: 25px;
       text-transform: uppercase; }
+
+.header-content-text {
+  margin: 180px 0px;
+  position: relative; }
+  .header-content-text .text-box {
+    width: 40%; }
+    .header-content-text .text-box button {
+      margin-top: 50px;
+      background: #00aeed;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px; }
+  .header-content-text .img-box {
+    position: absolute;
+    right: 0;
+    top: -150px; }
+    .header-content-text .img-box img {
+      height: 100%;
+      width: 550px; }

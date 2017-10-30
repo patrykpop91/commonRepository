@@ -12,7 +12,20 @@
 
 body{
   color: #fff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
 
 .container{
   max-width: 1600px;
@@ -23,11 +36,18 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.6);
+  padding: 0 150px;
+  height: 100vh;
+
+  img {
+    vertical-align: middle;
+  }
 }
 
 nav{
-  padding-top: 60px;
-  padding-left: 60px;
+    height: 100px;
+    line-height: 100px;
+
 
   .header-content-logo{
     float: left;
@@ -35,8 +55,8 @@ nav{
 
   ul{
     list-style-type: none;
-    line-height: 0px;
-    text-align: right;
+    float: right;
+    margin: 0;
   li{
     display: inline;
     margin-right: 25px;
@@ -44,6 +64,34 @@ nav{
 
   }
   }
+}
+
+.header-content-text{
+margin: 180px 0px;
+position: relative;
+  .text-box{
+    width:40%;
+
+    button{
+      margin-top: 50px;
+      background: #00aeed;
+      border: none;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+    }
+  }
+
+  .img-box{
+position: absolute;
+right: 0;
+top: -150px;
+  img{
+    height: 100%;
+    width: 550px;
+  }  
+}
+
 }
 
 
