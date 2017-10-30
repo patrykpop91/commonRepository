@@ -74,3 +74,16 @@ nav {
     .header-content-text .img-box img {
       height: 100%;
       width: 550px; }
+
+.first-section {
+  background: #0081ff;
+  padding: 0 150px; }
+  .first-section .text-box {
+    padding: 50px 0; }
+  .first-section .text-box-header h2 {
+    margin: 0px; }
+  .first-section .text-box-header p {
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 60px;
+            column-gap: 60px; }

@@ -29,6 +29,7 @@ body{
 
 .container{
   max-width: 1600px;
+  
 }
 
 .header-content-wrapper{
@@ -92,6 +93,31 @@ top: -150px;
   }  
 }
 
+}
+
+.first-section{
+  background: #0081ff;
+  padding: 0 150px;
+
+  .text-box{
+    padding: 50px 0;
+  }
+
+  .text-box-title{
+  }
+
+  .text-box-header{
+    
+      
+    h2{
+        margin: 0px;
+      }
+     
+      p{
+        column-count: 2;
+        column-gap: 60px;
+     }
+  }
 }
 
 
